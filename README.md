@@ -86,8 +86,10 @@ Dual-licensed:
 
 ```
 Newman, A. & Greene, S. (2026). Verified Autonomy: A Field Guide to Engineering Trust
-in AI Systems. https://github.com/antnewman/verified-autonomy
+in AI Systems. Zenodo. https://doi.org/10.5281/zenodo.19096229
 ```
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19096229.svg)](https://doi.org/10.5281/zenodo.19096229)
 
 ---
 
