@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Zenodo DOI registration (10.5281/zenodo.19096229)
 - Initial repository scaffold
 - Nine layer placeholder files
 - Implementation directory structure with runnable isolation
