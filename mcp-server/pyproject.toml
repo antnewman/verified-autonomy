@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verified-autonomy-mcp"
+version = "0.1.0"
+description = "MCP server exposing trust engineering tools from the Verified Autonomy framework"
+requires-python = ">=3.11"
+dependencies = [
+    "verified-autonomy>=0.1.0",
+]
