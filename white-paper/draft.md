@@ -2,7 +2,7 @@
 
 > **Status:** Phase two — to be drafted after the field guide is published and has demonstrated community traction
 >
-> **Target:** arXiv or Zenodo submission with DOI registration
+> **DOI:** 10.5281/zenodo.19096229 (reserved on Zenodo)
 >
 > **Licence:** CC BY 4.0
 
