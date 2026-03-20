@@ -7,7 +7,10 @@ name = "va-layer-06-rag-explainability"
 version = "0.1.0"
 description = "RAG as explainability — shift trust from model intent to source facticity"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -16,3 +19,19 @@ dev = [
     "mypy>=1.10",
     "ruff>=0.4",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = false
+ignore_missing_imports = true
+disable_error_code = ["type-arg", "no-any-return"]
+
+[tool.ruff]
+target-version = "py311"
