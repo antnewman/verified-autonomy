@@ -11,25 +11,28 @@ production examples, and limitations.
 See implementations/layer_09_formal_verification/ for the runnable implementation.
 """
 
-# TODO: Implementation — see implementations/layer_09_formal_verification/
-
 from typing import Any
 
 
-def verify_properties(*args: Any, **kwargs: Any) -> Any:
-    """Verify that a system satisfies a set of formally specified properties.
+def verify_output_bounds(*args: Any, **kwargs: Any) -> Any:
+    """Formally verify that network outputs stay within bounds for all inputs.
 
-    Args:
-        *args: Positional arguments — to be defined when implementation is added.
-        **kwargs: Keyword arguments — to be defined when implementation is added.
-
-    Returns:
-        To be defined when implementation is added.
-
-    Raises:
-        NotImplementedError: This function is a placeholder pending implementation.
+    Uses Z3 SMT solver. Full implementation in
+    implementations/layer_09_formal_verification/src/formal_verification.py
     """
     raise NotImplementedError(
-        "Layer 09 is not yet implemented. "
-        "See implementations/layer_09_formal_verification/ for the planned implementation."
+        "Layer 09 stub only. "
+        "See implementations/layer_09_formal_verification/ for the full implementation."
+    )
+
+
+def verify_monotonicity(*args: Any, **kwargs: Any) -> Any:
+    """Formally verify monotonicity in one input dimension.
+
+    Full implementation in
+    implementations/layer_09_formal_verification/src/formal_verification.py
+    """
+    raise NotImplementedError(
+        "Layer 09 stub only. "
+        "See implementations/layer_09_formal_verification/ for the full implementation."
     )
