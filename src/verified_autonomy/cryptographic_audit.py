@@ -16,8 +16,27 @@ See implementations/layer_08_cryptographic_audit/ for the runnable implementatio
 from typing import Any
 
 
-def create_audit_entry(*args: Any, **kwargs: Any) -> Any:
-    """Create a cryptographically signed audit entry for a model decision.
+def record_decision(*args: Any, **kwargs: Any) -> Any:
+    """Record an AI system decision as a tamper-evident audit entry.
+
+    Args:
+        *args: Positional arguments — to be defined when implementation is added.
+        **kwargs: Keyword arguments — to be defined when implementation is added.
+
+    Returns:
+        To be defined when implementation is added.
+
+    Raises:
+        NotImplementedError: This function is a placeholder pending implementation.
+    """
+    raise NotImplementedError(
+        "Layer 08 is not yet implemented. "
+        "See implementations/layer_08_cryptographic_audit/ for the planned implementation."
+    )
+
+
+def verify_chain(*args: Any, **kwargs: Any) -> Any:
+    """Verify the integrity of a cryptographic audit chain.
 
     Args:
         *args: Positional arguments — to be defined when implementation is added.
