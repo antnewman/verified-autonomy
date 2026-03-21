@@ -16,8 +16,46 @@ See implementations/layer_04_calibration/ for the runnable implementation.
 from typing import Any
 
 
-def calibrate_confidence(*args: Any, **kwargs: Any) -> Any:
-    """Apply conformal prediction to produce confidence scores with a formal coverage guarantee.
+def compute_ece(*args: Any, **kwargs: Any) -> Any:
+    """Compute Expected Calibration Error using equal-width binning.
+
+    Args:
+        *args: Positional arguments — to be defined when implementation is added.
+        **kwargs: Keyword arguments — to be defined when implementation is added.
+
+    Returns:
+        To be defined when implementation is added.
+
+    Raises:
+        NotImplementedError: This function is a placeholder pending implementation.
+    """
+    raise NotImplementedError(
+        "Layer 04 is not yet implemented. "
+        "See implementations/layer_04_calibration/ for the planned implementation."
+    )
+
+
+def calibrate_conformal(*args: Any, **kwargs: Any) -> Any:
+    """Compute the conformal threshold from a calibration set.
+
+    Args:
+        *args: Positional arguments — to be defined when implementation is added.
+        **kwargs: Keyword arguments — to be defined when implementation is added.
+
+    Returns:
+        To be defined when implementation is added.
+
+    Raises:
+        NotImplementedError: This function is a placeholder pending implementation.
+    """
+    raise NotImplementedError(
+        "Layer 04 is not yet implemented. "
+        "See implementations/layer_04_calibration/ for the planned implementation."
+    )
+
+
+def conformal_predict(*args: Any, **kwargs: Any) -> Any:
+    """Produce prediction sets using a conformal threshold.
 
     Args:
         *args: Positional arguments — to be defined when implementation is added.
