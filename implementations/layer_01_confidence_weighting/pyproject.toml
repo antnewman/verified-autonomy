@@ -7,9 +7,7 @@ name = "va-layer-01-confidence-weighting"
 version = "0.1.0"
 description = "Inverse confidence weighting — surface your weakest signal, not your average"
 requires-python = ">=3.11"
-dependencies = [
-    "numpy>=1.26",
-]
+dependencies = []
 
 [project.optional-dependencies]
 dev = [
@@ -18,3 +16,16 @@ dev = [
     "mypy>=1.10",
     "ruff>=0.4",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+[tool.ruff]
+target-version = "py311"

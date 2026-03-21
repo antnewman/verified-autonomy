@@ -11,25 +11,38 @@ production examples, and limitations.
 See implementations/layer_01_confidence_weighting/ for the runnable implementation.
 """
 
-# TODO: Implementation — see implementations/layer_01_confidence_weighting/
+# Re-export from the standalone implementation package.
+# To use this function, install the layer package:
+#   cd implementations/layer_01_confidence_weighting && make install
+# Or copy confidence_weighting.py into your project directly.
 
-from typing import Any
+from __future__ import annotations
 
 
-def inverse_confidence_weight(*args: Any, **kwargs: Any) -> Any:
-    """Aggregate confidence scores by weighting toward the weakest signal.
+def inverse_confidence_weight(field_confidences: dict[str, float]) -> float:
+    """Compute an aggregate confidence score using inverse weighting.
+
+    Fields with lower confidence are weighted more heavily, forcing the
+    aggregate to reflect the weakest signal rather than masking it in a
+    plain average.
+
+    The weight for each field is: ``weight = 2.0 - confidence``.
 
     Args:
-        *args: Positional arguments — to be defined when implementation is added.
-        **kwargs: Keyword arguments — to be defined when implementation is added.
+        field_confidences: Mapping of field name to confidence score.
+            Each confidence value must be in the range [0.0, 1.0].
 
     Returns:
-        To be defined when implementation is added.
+        Weighted aggregate confidence in [0.0, 1.0].
+        Returns 0.0 for an empty mapping.
 
     Raises:
-        NotImplementedError: This function is a placeholder pending implementation.
+        NotImplementedError: Install the standalone layer package.
+            See implementations/layer_01_confidence_weighting/.
+        ValueError: If any confidence value is outside [0.0, 1.0].
     """
     raise NotImplementedError(
-        "Layer 01 is not yet implemented. "
-        "See implementations/layer_01_confidence_weighting/ for the planned implementation."
+        "Install the standalone layer package to use this function:\n"
+        "  cd implementations/layer_01_confidence_weighting && make install\n"
+        "See implementations/layer_01_confidence_weighting/ for the full implementation."
     )
