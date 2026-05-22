@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Verified Autonomy: A Field Guide to Engineering Trust in AI Systems"
+message: "If you use this work, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Newman
+    given-names: Ant
+  - family-names: Greene
+    given-names: Shanti
+repository-code: "https://github.com/antnewman/verified-autonomy"
+url: "https://verified-autonomy.netlify.app"
+doi: 10.5281/zenodo.19096229
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19096229
+    description: "Zenodo DOI for Verified Autonomy"
+date-released: "2026-03-18"
+version: "0.1.0"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - ai
+  - trust
+  - safety
+  - confidence
+  - verification
+  - guardrails
+  - field-guide

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "va-layer-09-formal-verification"
+version = "0.1.0"
+description = "Formal verification — the gold standard nobody can fully use yet"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "z3-solver>=4.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "mypy>=1.10",
+    "ruff>=0.4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = false
+ignore_missing_imports = true
+disable_error_code = ["type-arg", "no-any-return"]
+
+[tool.ruff]
+target-version = "py311"

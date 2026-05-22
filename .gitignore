@@ -1,0 +1,17 @@
+# Session prompt file — not part of the project
+claude-code-prompt-verified-autonomy.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# Claude Code
+.claude/settings.local.json
